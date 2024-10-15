@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/descriptiontpechoFragment"
+        android:name="com.example.gymapplicationverdadera.descriptiontpechoFragment"
+        android:label="Description"
+        tools:layout="@layout/fragment_descriptiontpecho" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.gymapplicationverdadera.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/pechoHomeFragment"
+        android:name="com.example.gymapplicationverdadera.PechoHomeFragment"
+        android:label="Pecho"
+        tools:layout="@layout/fragment_pecho_home" />
+    <fragment
+        android:id="@+id/piernasHomeFragment"
+        android:name="com.example.gymapplicationverdadera.PiernasHomeFragment"
+        android:label="Piernas" />
+    <fragment
+        android:id="@+id/bisethomeFragment"
+        android:name="com.example.gymapplicationverdadera.bisethomeFragment"
+        android:label="Bisets"
+        tools:layout="@layout/fragment_bisethome" />
+    <fragment
+        android:id="@+id/gluteoshomeFragment"
+        android:name="com.example.gymapplicationverdadera.gluteoshomeFragment"
+        android:label="Gluteos"
+        tools:layout="@layout/fragment_gluteoshome" />
+    <fragment
+        android:id="@+id/hombroshomeFragment"
+        android:name="com.example.gymapplicationverdadera.hombroshomeFragment"
+        android:label="Hombros"
+        tools:layout="@layout/fragment_hombroshome" />
+    <fragment
+        android:id="@+id/espaldahomeFragment"
+        android:name="com.example.gymapplicationverdadera.EspaldahomeFragment"
+        android:label="Espalda"
+        tools:layout="@layout/fragment_espaldahome" />
+</navigation>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <!-- ScrollView para hacer scroll si es necesario -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#958989"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingTop="60dp">
+
+            <!-- Título -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"
+                android:text="Ejercicios"
+                android:textSize="34sp"
+                android:textColor="#FFFFFF" />
+
+            <!-- Primera fila: Imagen a la izquierda y botón a la derecha -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="156dp"
+                    android:layout_height="126dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="16dp"
+                    android:src="@drawable/pecho" />
+
+                <Button
+                    android:id="@+id/Femoralesbutton"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Pecho"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <!-- Segunda fila: Imagen a la izquierda y botón a la derecha -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="156dp"
+                    android:layout_height="126dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="16dp"
+                    android:src="@drawable/piernas" />
+
+                <Button
+                    android:id="@+id/cuadricepsbutton"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Piernas"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <!-- Tercera fila: Imagen a la izquierda y botón a la derecha -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="156dp"
+                    android:layout_height="126dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="16dp"
+                    android:src="@drawable/biset" />
+
+                <Button
+                    android:id="@+id/Bisepsbutton"
+                    android:layout_width="@dimen/image_size"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Bíceps"
+                    android:textSize="@dimen/text_size_large" />
+            </LinearLayout>
+
+            <!-- Cuarta fila: Imagen a la izquierda y botón a la derecha -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="156dp"
+                    android:layout_height="126dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="16dp"
+                    app:srcCompat="@drawable/img_11" />
+
+                <Button
+                    android:id="@+id/hombrosbutton"
+                    android:layout_width="@dimen/image_size"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Hombros"
+                    android:textSize="@dimen/text_size_large" />
+            </LinearLayout>
+
+            <!-- Quinta fila: Imagen a la izquierda y botón a la derecha (Espalda) -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="156dp"
+                    android:layout_height="126dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="16dp"
+                    app:srcCompat="@drawable/img_10" />
+
+                <Button
+                    android:id="@+id/espalbutton"
+                    android:layout_width="@dimen/image_size"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Espalda"
+                    android:textSize="@dimen/text_size_large" />
+            </LinearLayout>
+
+            <!-- Sexta fila: Imagen a la izquierda y botón a la derecha (Glúteos) -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="156dp"
+                    android:layout_height="126dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="16dp"
+                    app:srcCompat="@drawable/img_9" />
+
+                <Button
+                    android:id="@+id/gluteosbutton"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Glúteos"
+                    android:textSize="@dimen/text_size_large" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
